@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff8a65, #ff7043);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease forwards;
+}
+
+header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fff176;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff7043;
+    animation: fadeInText 1s forwards;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #616161;
+    animation: fadeInText 1.2s forwards;
+}
+
+#home img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: contain; /* ensures full image fits */
+    border: 4px solid #ff7043;
+    animation: scaleUp 1s forwards;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #424242;
+}
+
+/* Skills Section */
+#Skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Skills li {
+    background: linear-gradient(135deg, #ffcc80, #ff8a65);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+#Skills li:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ffab91, #ff7043);
+}
+
+/* Projects Section */
+#work article {
+    background: linear-gradient(to right, #fff9c4, #ffe0b2);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff7043;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#work article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#work h3 {
+    margin-bottom: 10px;
+    color: #ff7043;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    padding: 12px;
+    background: linear-gradient(135deg, #ff7043, #ff8a65);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #ff8a65, #ffab91);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #ff7043, #ff8a65);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav a {
+        margin: 5px 0;
+    }
+
+    #Skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
