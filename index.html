@@ -3,34 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandhya Sharma Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sandhya Sharma | Portfolio</title>
+    <link rel="stylesheet" href="index1.css">
 </head>
 <body>
+
     <!-- Header / Navbar -->
     <header>
-        <h2>Sandhya Sharma</h2>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>  
-        </nav>
+        <div class="nav-wrap">
+            <div class="logo">Sandhya Sharma</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
+    <!-- Home / Hero Section -->
     <section id="home">
-        <h1>Hello, I'm Sandhya</h1>
-        <p>I am a BCA student learning web development and Data Analytics.</p>
-        <img src="WhatsApp Image 2026-02-25 at 10.48.46 PM.jpeg" alt="My portfolio photo">
+        <div class="hero-wrap">
+            <div class="hero-text">
+                <p class="hello-tag">Hello, I'm</p>
+                <h1>Sandhya Sharma</h1>
+                <p class="hero-role">BCA Student | Web Developer | Data Analytics Enthusiast</p>
+                <p class="hero-desc">Passionate about building responsive websites and analyzing data to generate meaningful insights.</p>
+                <div class="hero-buttons">
+                    <!-- APNA RESUME PDF KA NAAM YAHAN LIKHO -->
+                    <a href=".vscode/Sandhya_Sharma_Resume-1.pdf" download class="btn-primary">Download Resume</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/sharmasandhya12" target="_blank">GH</a>
+                    <a href="https://www.linkedin.com/in/sandhya-sharma-233228373" target="_blank">LI</a>
+                    <a href="mailto:sandhya270g@gmail.com">✉</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- APNI PHOTO KA NAAM YAHAN LIKHO -->
+                <img src="WhatsApp Image 2026-06-22 at 11.16.37 AM.jpeg" alt="Sandhya Sharma">
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I am Sandhya Sharma. I am a BCA student learning web development, SQL, and Data Analytics. I enjoy building websites and improving my programming skills.</p>
+        <div class="about-wrap">
+            <p class="about-text">
+                I am Sandhya Sharma, a BCA student with a strong interest in Web Development, Data Analytics, and Emerging Technologies. I have gained practical experience through academic projects and internships, where I worked on web applications, data analysis, and problem-solving. I am passionate about continuous learning and always eager to explore new technologies. Currently, I am seeking opportunities to apply my technical skills, gain industry experience, and grow as an IT professional.
+
+            </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-label">Name</span>
+                    <span class="about-value">Sandhya Sharma</span>
+                </div>
+                <div class="about-card">
+                    <span class="about-label">Degree</span>
+                    <span class="about-value">BCA (Pursuing)</span>
+                </div>
+                <div class="about-card">
+                    <span class="about-label">Location</span>
+                    <span class="about-value">Ahmedabad, Gujarat</span>
+                </div>
+                <div class="about-card">
+                    <span class="about-label">Languages</span>
+                    <span class="about-value">Hindi,Gujarati,English</span>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-label">Email</span>
+                    <span class="about-value">sandhya270g@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-details">
+                    <h3>BCA – Bachelor of Computer Applications</h3>
+                    <p class="edu-institute">Shreyarth University</p>
+                    <div class="edu-meta">
+                        <span class="edu-year">2024 – 2028</span>
+                        <span class="edu-score">CGPA: 8.64</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="edu-icon">📘</div>
+                <div class="edu-details">
+                    <h3>12th – Gujarat Secondary and Higher Secondary Education Board</h3>
+                    <p class="edu-institute">HSC Board</p>
+                    <div class="edu-meta">
+                        <span class="edu-year">2023 – 24</span>
+                        <span class="edu-score">77.30%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="edu-icon">📗</div>
+                <div class="edu-details">
+                    <h3>10th – Gujarat Secondary Education Board</h3>
+                    <p class="edu-institute">SSC Board</p>
+                    <div class="edu-meta">
+                        <span class="edu-year">2021 – 22</span>
+                        <span class="edu-score">85.79%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
@@ -38,43 +130,111 @@
         <h2>My Skills</h2>
         <div class="skills-container">
             <div class="skill">
-                <img src="html.png" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                 <p>HTML</p>
             </div>
             <div class="skill">
-                <img src="css.png" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                 <p>CSS</p>
             </div>
             <div class="skill">
-                <img src="Sql.png" alt="SQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
                 <p>SQL</p>
             </div>
             <div class="skill">
-                <img src="figma.png" alt="Figma">
+                <img src=".vscode/powerBI logo.jpg" alt="Power BI">
+                <p>Power BI</p>
+            </div>
+            <div class="skill">
+                <img src=".vscode/MsExcle logo.png" alt="Excel">
+                <p>MS Excel</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
                 <p>Figma</p>
+            </div>
+            <div class="skill">
+                <img src="tableau logo.png" alt="Tableau">
+                <p>Tableau</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/2620/2620479.png" alt="Graphic Design">
+                <p>Graphic Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Data Analytics Internship</h3>
+                <p class="exp-company">Vibrant Technology</p>
+                <p class="exp-duration">01 May 2026 – 15 June 2026 | Grade: A</p>
+                <ul>
+                    <li>Completed hands-on internship in Data Analytics conducted by Vibrant Technology, Ahmedabad.</li>
+                    <li>Worked on real-world data analysis tasks and practical exercises.</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>Full Stack Development & Gen AI Internship</h3>
+                <p class="exp-company">Imarticus Learning | In association with Skill India</p>
+                <p class="exp-duration">March 2026</p>
+                <ul>
+                    <li>Completed hands-on training in Full Stack Web Development and Generative AI.</li>
+                    <li>Worked on real-world project-based learning curriculum.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
+    <section id="projects">
         <h2>My Projects</h2>
         <div class="project-container">
 
-            <!-- Zomato Project -->
             <div class="project-card">
-                <img src="zomato.png" alt="Zomato Website Screenshot">
+                <img src=".vscode/zomato.jpeg" alt="Zomato Website Screenshot">
                 <h3>Zomato Website Clone</h3>
-                <p>This is a Zomato homepage clone created using HTML and CSS.</p>
-                <a href="https://github.com/sharmasandhya12/zomatobysandhya" target="_blank">View Code</a>
+                <p>A responsive Zomato homepage clone created using HTML and CSS.</p>
+                <div class="tech-tags">
+                    <span>HTML</span><span>CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/sharmasandhya12/zomatobysandhya" target="_blank">View Code</a>
+                    <a href="zomato website/zomato.html" target="_blank">Live Demo</a>
+                </div>
             </div>
 
-            <!-- Portfolio Project -->
             <div class="project-card">
-                <img src="portfolio.png" alt="Portfolio Website Screenshot">
+                <img src=".vscode/portfolio.jpeg" alt="Portfolio Website Screenshot">
                 <h3>Personal Portfolio Website</h3>
-                <p>This is my personal portfolio website built using HTML and CSS.</p>
-                <a href="https://github.com/sharmasandhya12/portfolio-2" target="_blank">View Code</a>
+                <p>My personal portfolio website built using HTML and CSS.</p>
+                <div class="tech-tags">
+                    <span>HTML</span><span>CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/sharmasandhya12/portfolio-2" target="_blank">View Code</a>
+                    <a href="https://sharmasandhya12.github.io/portfolio-2" target="_blank">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src=".vscode/facebook.jpeg" alt="Facebook Login Page Screenshot">
+                <h3>Facebook Login Page</h3>
+                <p>A responsive Facebook login page replica designed using HTML and CSS.</p>
+                <div class="tech-tags">
+                    <span>HTML</span><span>CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/sharmasandhya12/Facebook-login-page/blob/main/facebook.html" target="_blank">View Code</a>
+                    <a href="facebook login/facebook.html" target="_blank">Live Demo</a>
+                </div>
             </div>
 
         </div>
@@ -86,30 +246,108 @@
         <div class="certificate-container">
 
             <div class="certificate-card">
-                <h3>Data Analytics Certificate</h3>
-                <p>Issued by IBM SkillsBuild</p>
-                <a href="data-analytics.pdf" target="_blank">View Certificate</a>
+                <div class="cert-icon">🏆</div>
+                <h3>Data Analytics Internship</h3>
+                <p>Vibrant Technology | Grade: A</p>
+                <!-- APNI PDF KA NAAM YAHAN LIKHO — Jo file tumhare folder mein hai -->
+                <a href=".vscode/Vibrant certificate.pdf" target="_blank">View Certificate</a>
             </div>
 
+            <div class="certificate-card">
+                <div class="cert-icon">🥇</div>
+                <h3>AI Careers for Women</h3>
+                <p>Microsoft India | SAP India | Edunet Foundation</p>
+                <a href="microsoft certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certificate-card">
+                <div class="cert-icon">🤖</div>
+                <h3>Agentic AI: Learner to Builder</h3>
+                <p>IBM SkillsBuild | CSRBOX</p>
+                <a href=".vscode/Ai_aegent certificate.pdf"">View Certificate</a>
+            </div>
+
+            <div class="certificate-card">
+                <div class="cert-icon">📊</div>
+                <h3>Data Analytics & BI Lab</h3>
+                <p>IBM SkillsBuild Winter Program 2025</p>
+                <a href=".vscode/dataanalytics certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certificate-card">
+                <div class="cert-icon">💻</div>
+                <h3>Full Stack Dev & Gen AI</h3>
+                <p>Imarticus Learning | Skill India</p>
+                <a href=".vscode/Fullstack cerificate.pdf"9i target="_blank">View Certificate</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-container">
+            <div class="achievement-card">
+                <!-- <div class="ach-icon">🏅</div> -->
+                <h3>🏅Grade A in Data Analytics Internship</h3>
+                <p>Successfully completed a Data Analytics Internship at Vibrant Technology and achieved Grade A performance.</p>
+            </div>
+            <div class="achievement-card">
+                <!-- <div class="ach-icon">📜</div> -->
+                <h3>📜5 Professional Certifications</h3>
+                <p>Earned certifications from Microsoft, IBM SkillsBuild, and Imarticus Learning in technology and data-related domains.
+</p>
+            </div>
+            <div class="achievement-card">
+                <!-- <div class="ach-icon">🎓</div> -->
+                <h3>🎓Academic Excellence</h3>
+                <p>Achieved a CGPA of 8.64 in BCA (up to 3rd Semester) at Shreyarth University.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Enter Your Name" required><br><br>
-            <input type="number" placeholder="Enter Your Number" required><br><br>
-            <input type="email" placeholder="Your Email" required><br><br>
-            <textarea placeholder="Your Message" required></textarea><br><br>
-            <button type="submit">Send</button>
+        <p class="contact-subtitle">Feel free to reach out for any query or opportunity!</p>
+        <div class="contact-info">
+            <p>📧 <a href="mailto:sandhya270g@gmail.com">sandhya270g@gmail.com</a></p>
+            <p>💼 <a href="https://www.linkedin.com/in/sandhya-sharma-233228373" target="_blank">LinkedIn Profile</a></p>
+            <p>🐙 <a href="https://github.com/sharmasandhya12" target="_blank">GitHub Profile</a></p>
+            <p>📍 Ahmedabad, Gujarat</p>
+        </div>
+        <form action="https://formspree.io/f/TUMHARI_FORM_ID" method="POST">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label>Your Message</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Sandhya Sharma | All Rights Reserved</p>
+        <p>&copy; 2026 Sandhya Sharma | All Rights Reserved</p>
+        <div class="footer-icons">
+            <a href="https://github.com/sharmasandhya12" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sandhya-sharma-233228373" target="_blank">LinkedIn</a>
+            <a href="mailto:sandhya270g@gmail.com">Email</a>
+        </div>
     </footer>
+
+    <!-- EmailJS Library -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <!-- Tumhara JS file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
