@@ -1,9 +1,4 @@
 // ============================================
-// 1. EMAILJS SETUP — 
-// ============================================
-// emailjs.init("TUMHARI_PUBLIC_KEY"); // EmailJS Public Key
-
-// ============================================
 // 1. TYPING ANIMATION — Hero Section
 // ============================================
 const roles = [
@@ -174,3 +169,14 @@ document.querySelectorAll(".project-card").forEach(card => {
         card.style.transform = "";
     });
 });
+
+// ===== FORM SUBMIT ANIMATION =====
+// const contactForm = document.querySelector("#contact form");
+
+// if (contactForm) {
+//     contactForm.addEventListener("submit", function () {
+//         const btn = contactForm.querySelector("button");
+//         btn.textContent = "Sending...";
+//         btn.style.opacity = "0.8";
+//     });
+// }
