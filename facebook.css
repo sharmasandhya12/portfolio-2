@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parent {
+    background-color: #f2f4f7;
+    min-height: 70vh;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    color: #0866FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+#box {
+    background-color: #fff;
+    margin: auto;
+    max-width: 400px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.15);
+    font-family: Helvetica, sans-serif;
+}
+
+.miniTitle {
+    font-size: 20px;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+#inputs {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.ipField {
+    padding: 15px 20px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E6E8EA;
+    outline: none;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: #0866FF;
+    width: 95%;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background-color: #054ecb;
+}
+
+.links {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0866FF;
+    font-size: 14px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #0866FF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    #box {
+        margin: 0 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
